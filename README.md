@@ -27,7 +27,7 @@ This package requires Python >=3.5 and MkDocs version 1.0 or higher.
 Install the package with pip:
 
 ```cmd
-pip install git+https://github.com/arterm-sedov/mkdocs-em-img2fig-plugin
+pip install mkdocs-em-img2fig-plugi
 ```
 
 Enable the plugin in your `mkdocs.yml`:
