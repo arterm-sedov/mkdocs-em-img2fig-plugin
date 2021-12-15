@@ -8,15 +8,14 @@ def read_file(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='mkdocs-img2fig-plugin',
-    version='0.9.3',
-    description='A MkDocs plugin that converts markdown encoded images into <figure> elements.',
+    name='mkdocs-em-img2fig-plugin',
+    version='0.1',
+    description='A MkDocs plugin that converts markdown encoded images surrounded by two asterisks into <figure> elements.',
 	long_description=read_file('README.md'),
     long_description_content_type='text/markdown',
     keywords='mkdocs python markdown',
-    url='https://github.com/stuebersystems/mkdocs-img2fig-plugin',
-    author='Antonio Cambule',
-    author_email='antonio.cambule@stueber.de',
+    url='https://github.com/arterm-sedov/mkdocs-em-img2fig-plugin',
+    author='Arterm Sedov',
 	license='MIT',
 	python_requires='>=3.5',
     install_requires=[
@@ -25,7 +24,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'mkdocs.plugins': [
-            'img2fig = src:Image2FigurePlugin',
+            'em-img2fig = src:Image2FigurePlugin',
         ]
     }
 )
