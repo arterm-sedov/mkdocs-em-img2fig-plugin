@@ -15,6 +15,9 @@ into
 </figure>
 ```
 
+## Credits
+This plugin is a fork of the stuebersystems/mkdocs-img2fig-plugin which does not requre the two asterisks
+
 ## Requirements
 
 This package requires Python >=3.5 and MkDocs version 1.0 or higher.  
