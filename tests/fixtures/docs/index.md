@@ -2,4 +2,4 @@
 
 Our image:
 
-![our image caption](github-octocat.png)
+*![our image caption](github-octocat.png)*
