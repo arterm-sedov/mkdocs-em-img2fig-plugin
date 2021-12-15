@@ -16,7 +16,7 @@ into
 ```
 
 ## Credits
-This plugin is a fork of the stuebersystems/mkdocs-img2fig-plugin which does not requre the two asterisks
+This plugin is a fork of the stuebersystems/mkdocs-img2fig-plugin which does not require the two asterisks
 
 ## Requirements
 
@@ -35,7 +35,7 @@ Enable the plugin in your `mkdocs.yml`:
 ```yaml
 plugins:
     - search
-    - autolinks 
+    - autolinks
     - em-img2fig
 ```
 **Note:** If you use autolinks or similar plugin declare em-img2fig after it, not before for correct precedence.
