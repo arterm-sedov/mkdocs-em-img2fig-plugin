@@ -6,11 +6,11 @@ This [MkDocs](https://www.mkdocs.org) plugin converts markdown encoded images su
 *![An image caption](\assets\images\my-image.png)*
 ```
 
-into 
+into `<figure>` notation with inline markdown for the image itself:
 
 ```html
-<figure class="figure-image">
-  <img src="\assets\images\my-image.png" alt="An image caption">
+<figure markdown>
+  ![An image caption](\assets\images\my-image.png)
   <figcaption>An image caption</figcaption>
 </figure>
 ```
@@ -20,7 +20,9 @@ This plugin is a fork of the https://github.com/stuebersystems/mkdocs-img2fig-pl
 
 ## Requirements
 
-This package requires Python >=3.5 and MkDocs version 1.0 or higher.  
+This package requires:
+* Python >=3.5 and MkDocs version 1.0 or higher.  
+* `md_in_html` extension enabled in your MkDocs configuration.
 
 ## Installation
 
