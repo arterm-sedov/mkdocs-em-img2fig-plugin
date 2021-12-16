@@ -24,4 +24,11 @@ jobs:
         py -m pip install -e .
         cd tests/fixtures/
         py -m mkdocs build 
-        py -m pytest tests/
+    
+    - name: actions-pytest
+      # You may pin to the exact commit or the version.
+      # uses: xoviat/actions-pytest@6e27d0810b47a907cc45bc96092599f072b28870
+      uses: xoviat/actions-pytest@0.1-alpha2
+      with: 
+        # Arguments for the pytest command
+        args: tests
