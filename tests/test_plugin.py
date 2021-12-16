@@ -81,7 +81,7 @@ def test_img2fig_output(tmp_path):
     # result = build_docs_setup(tmp_proj)
     # assert result.exit_code == 0, "'mkdocs build' command failed"
 
-    index_file = os.path.join(tmp_proj, "tests/fixtures/site/index.html")
+    index_file = os.path.abspath("tests/fixtures/site/index.html")
     assert os.path.exists(index_file), "%s does not exist" % index_file
 
     contents = pathlib.Path(index_file).read_text()
