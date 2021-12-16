@@ -16,7 +16,7 @@ into
 ```
 
 ## Credits
-This plugin is a fork of the stuebersystems/mkdocs-img2fig-plugin which does not require the two asterisks
+This plugin is a fork of the https://github.com/stuebersystems/mkdocs-img2fig-plugin which does not require the two asterisks
 
 ## Requirements
 
