@@ -35,7 +35,7 @@ def build_docs_setup(testproject_path):
         command: Object with results of command
     """
     with cd(testproject_path):
-        return CliRunner().invoke('mkdocs build')
+        return os.system(py -m mkdocs build)
 
 
 def setup_clean_mkdocs_folder(mkdocs_yml_path, output_path):
