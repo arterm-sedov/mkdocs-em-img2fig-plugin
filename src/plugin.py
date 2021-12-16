@@ -12,8 +12,7 @@ class Image2FigurePlugin(BasePlugin):
         
         markdown = re.sub(pattern,
             r'<figure class="figure-image">\n' + \
-            r'  <img src="\2" alt="\1">\n' + \
-            r'  ![\1](\2)' + \
+            r'  ![\1](\2)\n' + \
             r'  <figcaption>\1</figcaption>\n' + \
             r'</figure>',                        
             markdown)            
