@@ -20,8 +20,8 @@ jobs:
 
     - name: Run unit tests
       run: |
-        pip install -r tests/test_requirements.txt
-        pip install -e .
+        py -m pip install -r tests/test_requirements.txt
+        py -m pip install -e .
         cd tests/fixtures/
-        mkdocs build 
-        pytest tests/
+        py -m mkdocs build 
+        py -m pytest tests/
