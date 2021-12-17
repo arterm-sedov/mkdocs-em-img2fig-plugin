@@ -14,7 +14,7 @@ class Image2FigurePlugin(BasePlugin):
             r'<figure markdown>\n' + \
             r'  ![\1](\2)\n' + \
             r'  <figcaption>\1</figcaption>\n' + \
-            r'</figure>',                        
+            r'</figure>\n',                        
             markdown)            
 
         return markdown
