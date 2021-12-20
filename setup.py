@@ -9,7 +9,7 @@ def read_file(fname):
 
 setup(
     name='mkdocs-em-img2fig-plugin',
-    version='0.2.1',
+    version='0.2.2',
     description='A MkDocs plugin that converts markdown encoded images surrounded by two asterisks into <figure> elements.',
 	long_description=read_file('README.md'),
     long_description_content_type='text/markdown',
