@@ -1,13 +1,13 @@
 # MkDocs Em-Img2Fig Plugin
 
-This [MkDocs](https://www.mkdocs.org) plugin converts markdown encoded images surrounded by two asterisks like
+This [MkDocs](https://www.mkdocs.org) plugin converts markdown encoded images surrounded by two asterisks or two underscores like
 
 ```
 *![An image caption](\assets\images\my-image.png)*
 ```
 OR
 ```
-_![An image caption](\assets\images\my-image.png)*_
+_![An image caption](\assets\images\my-image.png)_
 
 ```
 
