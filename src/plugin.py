@@ -8,13 +8,10 @@ class Image2FigurePlugin(BasePlugin):
 
     def on_page_markdown(self, markdown, **kwargs):
       
-        pattern = re.compile(r'\*!\[(.*?)\]\((.*?)\)\*', flags=re.IGNORECASE)
+        pattern = re.compile(r'((_)|\*)!\[(.*?)\]\((.*?)\)(?(2)_|\*)', flags=re.IGNORECASE)
         
         markdown = re.sub(pattern,
-            r'\n<figure markdown>\n' + \
-            r'  ![\1](\2)\n' + \
-            r'  <figcaption>\1</figcaption>\n' + \
-            r'</figure>\n',                        
+            r'<figure markdown>![\3](\4)<figcaption>\3</figcaption></figure>',                        
             markdown)            
 
         return markdown
