@@ -85,4 +85,5 @@ def test_img2fig_output(tmp_path):
     assert os.path.exists(index_file), "%s does not exist" % index_file
 
     contents = pathlib.Path(index_file).read_text()
-    assert "<figcaption>our image caption</figcaption>" in contents
+    assert "<figcaption>our image caption 1</figcaption>" in contents
+    assert "<figcaption>our image caption 2</figcaption>" in contents
