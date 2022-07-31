@@ -20,9 +20,6 @@ into `<figure>` notation with inline markdown for the image itself:
 </figure>
 ```
 
-## Credits
-This plugin is a fork of the https://github.com/stuebersystems/mkdocs-img2fig-plugin which does not require the two asterisks or two underscores
-
 ## Requirements
 
 This package requires:
@@ -50,3 +47,6 @@ plugins:
 **Note:** If you have no `plugins` entry in your config file yet, you'll likely also want to add the `search` plugin. MkDocs enables it by default if there is no `plugins` entry set, but now you have to enable it explicitly.
 
 More information about plugins in the [MkDocs documentation](https://www.mkdocs.org/user-guide/plugins/)
+
+## Credits
+This plugin is a fork of the https://github.com/stuebersystems/mkdocs-img2fig-plugin which does not require the two asterisks or two underscores
