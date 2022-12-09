@@ -11,7 +11,7 @@ class Image2FigurePlugin(BasePlugin):
         pattern = re.compile(r'((_)|\*)!\[(.*?)\]\((.*?)\)(?(2)_|\*)', flags=re.IGNORECASE)
         
         markdown = re.sub(pattern,
-            r'<figure markdown>![\3](\4)<figcaption>\3</figcaption></figure>',                        
+            r'<div class="screenshot_with_caption" markdown>![\3](\4)<p class="caption">\3</p></div>',                        
             markdown)            
 
         return markdown
