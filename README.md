@@ -2,18 +2,18 @@
 
 This [MkDocs](https://www.mkdocs.org) plugin converts markdown encoded images surrounded by two asterisks or two underscores like
 
-```
+``` markdown
 *![An image caption](\assets\images\my-image.png)*
 ```
 OR
-```
+``` markdown
 _![An image caption](\assets\images\my-image.png)_
 
 ```
 
 into `<figure>` notation with inline markdown for the image itself:
 
-```html
+``` html
 <figure markdown>
   ![Image caption](\assets\images\my-image.png)
   <figcaption>Image caption</figcaption>
@@ -29,18 +29,20 @@ This package requires:
 ## Installation
 
 Install the package with pip:
-
-```cmd
+  
+``` cmd
 pip install mkdocs-em-img2fig-plugin
 ```
 
-Enable the plugin in your `mkdocs.yml`:
+Enable the mkdocs-em-img2fig-plugin plugin and md_in_html extension in your `mkdocs.yml`:
 
-```yaml
+``` yaml
 plugins:
-    - search
-    - autolinks
-    - em-img2fig
+  - search
+  - autolinks
+  - em-img2fig
+markdown_extensions:
+  - md_in_html
 ```
 **Note:** If you use autolinks or similar plugin declare em-img2fig after it, not before for correct precedence.
 
