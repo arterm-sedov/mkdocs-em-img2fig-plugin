@@ -3,11 +3,11 @@
 This [MkDocs](https://www.mkdocs.org) plugin converts markdown encoded images surrounded by two asterisks or two underscores like
 
 ``` markdown
-*![An image caption](\assets\images\my-image.png)*
+*![An image caption](images/my-image.png)*
 ```
 OR
 ``` markdown
-_![An image caption](\assets\images\my-image.png)_
+_![An image caption](images/my-image.png)_
 
 ```
 
@@ -15,7 +15,7 @@ into `<figure>` notation with inline markdown for the image itself:
 
 ``` html
 <figure markdown>
-  ![Image caption](\assets\images\my-image.png)
+  ![Image caption](/images/my-image.png)
   <figcaption>Image caption</figcaption>
 </figure>
 ```
